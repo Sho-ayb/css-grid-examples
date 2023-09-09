@@ -1,0 +1,89 @@
+/* Variables */
+
+:root{
+
+    --blue-background: #365ABA;
+    --blue-light-background: #8D8FC0;
+    --color-white: #eee;
+    --color-grey: #333;
+
+}
+
+
+
+/* Global css rules */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html{
+    
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+
+    width: 90%;
+    min-height: 10vh;
+    margin: 0 auto;
+    padding: 2em 0;
+    background: linear-gradient(to bottom, var(--blue-light-background), var(--blue-background));
+    border-bottom: 1px solid var(--color-white);
+
+
+}
+
+header h1{
+
+    color: #eee;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+
+
+}
+
+.section-main{
+
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, var(--blue-background), var(--blue-light-background));
+    font-size: 2rem;
+
+}
+
+.section-pancake{
+
+    width: 90%;
+    min-height: 55vh;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-white);
+    padding: 1em;
+
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1em;
+
+}
+
+[class ^= "box-"]{
+
+    display: grid;
+    place-items: center;
+    padding: 1em;
+    border: 5px solid var(--color-grey);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: var(--color-white);
+}
