@@ -89,7 +89,7 @@ h2{
 .section-pancake{
 
     width: 90%;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0 auto;
     border-bottom: 1px solid var(--color-white);
     padding: 1em;
@@ -117,7 +117,7 @@ We can then specify how many columns each element takes up by defining this on e
 .section-beginner-plus{
 
     width: 90%;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0 auto;
     border-bottom: 1px solid var(--color-white);
     padding: 1em;
@@ -160,3 +160,175 @@ We can then specify how many columns each element takes up by defining this on e
     grid-column: span 4;
 
 }
+
+/* 
+
+
+In the above layout we dealt with a 12 grid column layout without it being responsive.  In this layout we will be utilising the 12 grid column layout as before but will be making it full responsive. 
+
+
+*/
+
+.section-intermediate-responsive{
+
+    width: 90%;
+    min-height: 90vh;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-white);
+    padding: 1em;
+
+    /* display: grid; */
+
+
+}
+
+.section-intermediate-responsive h2{
+
+    padding: 1em;
+
+
+}
+
+.main-layout-responsive{
+
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+
+
+    display: grid;
+    gap: 1em;
+
+
+}
+
+
+
+/* 
+
+
+We can make the layout responsive using media queries.  We will be using min-width rather than max-width as the layout is mobile first.
+
+
+
+*/
+
+
+@media (min-width: 768px){
+
+    .main-layout-responsive{
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px 80px 1fr 80px 100px;
+
+
+    }
+
+    .main-layout-responsive .box-7{
+
+        grid-column: 1 / 13;
+
+
+    }
+
+    .main-layout-responsive .box-8{
+
+        grid-column: 1 / 13;
+
+
+    }
+
+    .main-layout-responsive .box-9{
+
+        grid-column: 1 / 13;
+
+    }
+
+    .main-layout-responsive .box-10{
+
+        grid-column: 1 / 7;
+
+
+    }
+
+    .main-layout-responsive .box-11{
+
+        grid-column: 7 / 13;
+
+
+    }
+
+    .main-layout-responsive .box-12{
+
+        grid-column: 1 / 13;
+
+
+    }
+
+
+
+}
+
+
+@media (min-width: 1080px){
+
+    .main-layout-responsive{
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px 400px 1fr; 
+    }
+
+
+    /* Header(1) */
+    .main-layout-responsive .box-7{
+
+        grid-column: 1 / 13;
+
+
+    }
+
+    /* Ad(2) */
+    .main-layout-responsive .box-8{
+
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+
+
+    }
+
+    /* Main(3) */
+    .main-layout-responsive .box-9{
+
+        grid-column: 3 / 13;
+        grid-row: 2 / 3;
+
+    }
+
+    /* Blog(4) */
+    .main-layout-responsive .box-10{
+
+        grid-column: 1 / 7;
+
+
+    }
+
+    /* Side(5) */
+    .main-layout-responsive .box-11{
+
+        grid-column: 7 / 13;
+
+
+    }
+
+    /* Footer(6) */
+    .main-layout-responsive .box-12{
+
+        grid-column: 1 / 13;
+
+
+    }
+
+
+
+}
+
