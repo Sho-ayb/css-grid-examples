@@ -1,145 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>CSS Grid Examples</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header><h1>css grid examples</h1></header>
     <main class="section-main">
+      <div class="section-pancake">
+        <h2>Pancake Layout</h2>
+        <div class="box-1">Header</div>
+        <div class="box-2">Main</div>
+        <div class="box-3">Footer</div>
+      </div>
 
-        <div class="section-pancake">
+      <div class="section-beginner-plus">
+        <h2>12 Grid Column Layout</h2>
+        <div class="box-4">Nav</div>
+        <div class="box-5">Main</div>
+        <div class="box-6">Blog</div>
+      </div>
 
-            <h2>Pancake Layout</h2>
-            <div class="box-1">Header</div>
-            <div class="box-2">Main</div>
-            <div class="box-3">Footer</div>
+      <div class="section-intermediate-responsive">
+        <h2>12 Grid Column Responsive Layout</h2>
 
+        <div class="main-layout-responsive">
+          <div class="box-7">Header(1)</div>
+          <div class="box-8">Ad(2)</div>
+          <div class="box-9">Main(3)</div>
+          <div class="box-10">Blog(4)</div>
+          <div class="box-11">Side(5)</div>
+          <div class="box-12">Footer(6)</div>
         </div>
+      </div>
 
-        <div class="section-beginner-plus">
+      <div class="section-pro-responsive-grid-template">
+        <h2>12 Grid Column Responsive Template</h2>
 
-            <h2>12 Grid Column Layout</h2>
-            <div class="box-4">Nav</div>
-            <div class="box-5">Main</div>
-            <div class="box-6">Blog</div>
-
+        <div class="main-layout-responsive-template">
+          <div class="box-13">Header(1)</div>
+          <div class="box-14">Blog(2)</div>
+          <div class="box-15">Main(3)</div>
+          <div class="box-16">Side(4)</div>
+          <div class="box-17">Footer(5)</div>
         </div>
+      </div>
 
+      <div class="section-master-responsive">
+        <h2>Using grid property autofit to make child elements responsive</h2>
 
-        <div class="section-intermediate-responsive">
-
-            <h2>12 Grid Column Responsive Layout</h2>
-
-
-            <div class="main-layout-responsive">
-
-                <div class="box-7">Header(1)</div>
-                <div class="box-8">Ad(2)</div>
-                <div class="box-9">Main(3)</div>
-                <div class="box-10">Blog(4)</div>
-                <div class="box-11">Side(5)</div>
-                <div class="box-12">Footer(6)</div>
-
-
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300" alt="" />
             </div>
-
-        </div>
-
-        <div class="section-pro-responsive-grid-template">
-
-
-
-            <h2>12 Grid Column Responsive Template</h2>
-
-            <div class="main-layout-responsive-template">
-
-
-                <div class="box-13">Header(1)</div>
-                <div class="box-14">Blog(2)</div>
-                <div class="box-15">Main(3)</div>
-                <div class="box-16">Side(4)</div>
-                <div class="box-17">Footer(5)</div>
-
-
+            <div class="card-content">
+              <h2>Card Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus mollitia aliquid fuga quos pariatur dolores quae
+                deserunt fugiat, ab at unde repellat placeat.
+              </p>
             </div>
+          </div>
 
-        </div>
-
-
-        <div class="section-master-responsive">
-
-            <h2>Using grid property autofit to make child elements responsive</h2>
-
-
-            <div class="card-container">
-
-                <div class="card">
-    
-                    <div class="card-image">
-                        <img src="https://picsum.photos/200/300" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Card Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus mollitia aliquid fuga quos pariatur dolores quae deserunt fugiat, ab at unde repellat placeat.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-    
-                    <div class="card-image">
-                        <img src="https://picsum.photos/200/300" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Card Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus mollitia aliquid fuga quos pariatur dolores quae deserunt fugiat, ab at unde repellat placeat.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-    
-                    <div class="card-image">
-                        <img src="https://picsum.photos/200/300" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Card Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus mollitia aliquid fuga quos pariatur dolores quae deserunt fugiat, ab at unde repellat placeat.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-    
-                    <div class="card-image">
-                        <img src="https://picsum.photos/200/300" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Card Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus mollitia aliquid fuga quos pariatur dolores quae deserunt fugiat, ab at unde repellat placeat.</p>
-                    </div>
-                </div>
-
-
-
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300" alt="" />
             </div>
+            <div class="card-content">
+              <h2>Card Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus mollitia aliquid fuga quos pariatur dolores quae
+                deserunt fugiat, ab at unde repellat placeat.
+              </p>
+            </div>
+          </div>
 
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300" alt="" />
+            </div>
+            <div class="card-content">
+              <h2>Card Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus mollitia aliquid fuga quos pariatur dolores quae
+                deserunt fugiat, ab at unde repellat placeat.
+              </p>
+            </div>
+          </div>
 
-
-
-
-
-
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300" alt="" />
+            </div>
+            <div class="card-content">
+              <h2>Card Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus mollitia aliquid fuga quos pariatur dolores quae
+                deserunt fugiat, ab at unde repellat placeat.
+              </p>
+            </div>
+          </div>
         </div>
-
-
-
-
+      </div>
     </main>
-
-</body>
+  </body>
 </html>
